@@ -10,7 +10,7 @@ const DisplayMsg = ({messages, isAnswering}) => {
     {messages.length === 0 ? (
       <View style={[styles.view, styles.first]}>
         <Image style={styles.img} source={logo} fadeDuration={1000}/>
-        <Text style={styles.firstText}>Ask me anything, and I'll do my best to help.</Text>
+        <Text style={styles.firstText}>You're about to receive personalized Ayurvedic and Siddha medicinal remedies tailored to your condition. Please provide the disease or symptoms you're experiencing for targeted suggestions.</Text>
       </View>
     ) : (
       <View style={styles.view}>
