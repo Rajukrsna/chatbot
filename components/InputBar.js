@@ -33,7 +33,7 @@ const InputBar = ({
       setIsAnswering(true);
   
       const model = genAI.getGenerativeModel({ model: "gemini-pro" });
-      const prompt = text;
+      const prompt = text+"concider this input if the question is releated to medical disease and give the solution in ayurvedha and siddha. Remove any unwanted content. If the user enters other than disease, then give response as"Enter a medical related health issue that your have"";
   
       const result = await model.generateContent(prompt);
       const response = await result.response;
