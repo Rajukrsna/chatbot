@@ -117,6 +117,7 @@ const Login = ({ navigation }) => {
                 </View>
 
                 <Button
+                    onPress={()=>navigation.navigate("HomeScreen")}
                     title="Login"
                     filled
                     style={{
@@ -221,10 +222,10 @@ const Login = ({ navigation }) => {
                         }}>Register</Text>
                     </Pressable>
                 </View>
-                <View>
+                    {                /*<View>
                     <Pressable onPress={()=> navigation.navigate("HomeScreen")}>
                         <Text style={{color: COLORS.primary, fontSize: 20}}>Home page</Text>
-                    </Pressable>
+                    </Pressable>*/}
                 </View>
             </View>
         </SafeAreaView>
